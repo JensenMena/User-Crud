@@ -1,0 +1,80 @@
+.user {
+    width: 100%;
+    max-width: 20em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px 3px rgba(165, 107, 107, 0.133);
+    padding: 1.5em 2em 2em;
+
+
+
+    &:hover {
+        scale: 0.95;
+    }
+
+    .user__img {
+        width: 70%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 auto 2em;
+    }
+
+    .user__name {
+        text-align: center;
+        font-size: 1.5em;
+        font-family: "Nunito", sans-serif;
+    }
+
+    .user-hr {
+        margin: 0.5em 0;
+        border-color: #0001;
+    }
+
+    .user__list {
+        gap: 0.7em;
+        margin-bottom: 1.1em;
+
+        .user__item {
+            gap: 0.2em;
+
+            .user__label {
+                font-size: 1.2em;
+                padding-left: 1em;
+                color: #999;
+                text-transform: uppercase;
+            }
+
+            user__value {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    .user__footer {
+        gap: 1em;
+
+        .user__btn {
+
+            font-size: 1.3em;
+            width: 25%;
+            padding: 0.2em 0;
+            border-radius: 1em;
+            color: #fff;
+            transition: filter 0.5s ease;
+
+            &:hover {
+                filter: brightness(1.2);
+            }
+        }
+
+        .user__delete {
+            background-color: #ed0000;
+        }
+
+        .user__edit {
+            background-color: #9d9898;
+
+
+        }
+    }
+}
